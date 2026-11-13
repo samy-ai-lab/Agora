@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nos partenaires - Campus Café</title>
 </head>
 <body>
- 
-    <header>
+
+  <header>
     <h1>Voici nos partenaires</h1>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="https://www.isep.fr">ISEP</a></li>
-        <li><a href="partenaires.html">Nos partenaires</a></li>
+        <li><a href="partenaire.html">Nos partenaires</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-     
-        <table >
+      <table>
         <caption>Nos partenaires</caption>
         <tr>
-          <td>Partenaire</td>
-          <td>Adresse</td>
+          <th>Partenaire</th>
+          <th>Adresse</th>
         </tr>
-        
         <tr>
           <td>Librairie Page Blanche</td>
           <td>12 rue des Lilas, 75011 Paris</td>
@@ -41,12 +40,53 @@
           <td>1 place de la Mairie, 92100 Boulogne-Billancourt</td>
         </tr>
       </table>
-    
+    </section>
+
+    <section>
+      <h2>Devenez partenaire du club de lecture</h2>
+
+      <form action="#" method="post">
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="exemple@domaine.fr" required>
+
+        <label for="mdp">Mot de passe</label>
+        <input type="password" id="mdp">
+
+        <label for="date">Date de début de partenariat</label>
+        <input type="date" id="date">
+
+        <label for="livres">Nombre de livres mis à disposition par semaine</label>
+        <input type="number" id="livres">
+
+        <fieldset>
+          <legend>Avez-vous déjà été partenaire par le passé ?</legend>
+          <input type="radio" id="oui" name="ancien">
+          <label for="oui">Oui</label>
+          <input type="radio" id="non" name="ancien">
+          <label for="non">Non</label>
+        </fieldset>
+
+        <input type="checkbox" id="roman">
+        <label for="roman">Roman</label>
+        <input type="checkbox" id="sf">
+        <label for="sf">Science-fiction</label>
+        <input type="checkbox" id="policier">
+        <label for="policier">Policier</label>
+        <input type="checkbox" id="enfance">
+        <label for="enfance">Petite enfance</label>
+        <input type="checkbox" id="autres">
+        <label for="autres">Autres</label>
+
+        <textarea rows="5" cols="40"></textarea>
+
+        <button type="submit">S’inscrire</button>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Club de lecture – Tous droits réservés</p>
-  </footer>
 </body>
 </html>
