@@ -47,3 +47,50 @@
         <caption>Nos partenaires</caption>
     </table>
  </section>
+
+ <section>
+    <h2>Devenez partenaire du club de lecture</h2>
+
+    <form action="#" method="post"></form>
+
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="nom.prenom@gmail.com" required>
+
+    <label for="mdp">Mot de passe:</label>
+    <input type="text" id="mdp" name="mdp">
+
+    <label for="date">Date de bébut de partenariat:</label>
+    <input type="text" id="date" name="date">
+
+    <label for="number">Nombre de livres mis à disposition par semaine:</label>
+    <input type="text" id="number" name="number">
+
+    <fieldset>
+        <legend> Avez-vous déjà été partenaire par le passé ?</legend>
+        <input type="radio" id="oui" name="deja_partenaire" value="oui">
+        <label for="oui">Oui</label>
+        <input type="radio" id="non" name="deja_partenaire" value="non">
+        <label for="non">Non</label> 
+    </fieldset>
+
+    <fieldset>
+        <legend> Livres mis à disposition :</legend>
+        <input type="checkbox" id="cat-roman" name="categorie" value="Roman">
+        <label for="cat-roman">Roman</label>
+        <input type="checkbox" id="cat-science-fiction" name="categorie" value="Science-fiction">
+        <label for="cat-science-fiction">Science-fiction</label>
+        <input type="checkbox" id="cat-policier" name="categorie" value="Policier">
+        <label for="cat-policier">Policier</label>
+        <input type="checkbox" id="cat-enfance" name="categorie" value="Petite enfance">
+        <label for="cat-enfance">Petite enfance</label>  
+    </fieldset>
+
+    <label for="infos">Autres informations:</label>
+    <textarea id="infos" name="infos" rows="5" cols="40"></textarea>
+
+    <button type="submit">S'inscrire</button>
+
+ </section>
