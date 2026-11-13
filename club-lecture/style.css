@@ -1,0 +1,8 @@
+/* ===== EXERCICES CSS - PARTIE 1 (fichier CSS) ===== */
+
+/* ===== Pour commencer (C2) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
