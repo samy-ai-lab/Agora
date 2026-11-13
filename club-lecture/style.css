@@ -58,3 +58,74 @@ nav a {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
+
+/* ===== EXERCICE 2 ===== */
+
+/* 1. Le main */
+main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+/* 2. L'image */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+}
+
+/* 3. Le tableau */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem;
+}
+
+th {
+  background: #2B3A67;
+  color: white;
+}
+
+/* 4. Le formulaire */
+form label {
+  display: block;
+  margin-top: 0.75rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* les ronds et les cases à cocher restent petits, sur la même ligne */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #2B3A67;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
