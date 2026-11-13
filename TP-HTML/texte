@@ -1,2 +1,10 @@
 pour l'exo 3 et repondre a la question deja pourquoi du th, et deja oui le th (comparer au td sera toujours gras et centre), le th on choisi lui car il est un titre de colonne et nom une donnée comparer au td
 que ce passe t'il quand on enlever une celule bah le texte ce decale sur la gauche et il ya un espace vide dans la collone.
+header : c’est l’en-tête de la page ou d’une section, avec le titre, le logo, parfois le menu.
+nav : c’est un bloc de liens de navigation, le menu.
+article : c’est un contenu complet qui a du sens tout seul, comme un article de blog ou une fiche de livre.
+main : c’est le contenu principal de la page, et il n’y en a qu’un par page.
+footer : c’est le pied de page, avec le copyright, les contacts, les mentions légales.
+div : elle ne dit rien du contenu. C’est une simple boîte pour regrouper des éléments, sur toute la largeur.
+span : elle ne dit rien non plus. C’est une petite boîte pour un bout de texte, à l’intérieur d’une ligne.
+b : elle met le texte en gras, sans dire pourquoi. La version sémantique est <strong>, qui veut dire « ce texte est important ».
