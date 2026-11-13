@@ -41,5 +41,62 @@
       </tr>
     </table>
   </section>
+
+  <!-- EXERCICE 4 : le formulaire -->
+  <section>
+    <h2>Devenez partenaire du club de lecture</h2>
+
+    <form action="#" method="post">
+
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" required>
+      <br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" placeholder="exemple@mail.com" required>
+      <br>
+
+      <label for="mdp">Mot de passe :</label>
+      <input type="password" id="mdp">
+      <br>
+
+      <label for="date">Date de début :</label>
+      <input type="date" id="date">
+      <br>
+
+      <label for="livres">Livres par semaine :</label>
+      <input type="number" id="livres">
+      <br>
+
+      <fieldset>
+        <legend>Déjà partenaire par le passé ?</legend>
+        <input type="radio" id="oui" name="ancien">
+        <label for="oui">Oui</label>
+        <input type="radio" id="non" name="ancien">
+        <label for="non">Non</label>
+      </fieldset>
+
+      <p>Catégories de livres :</p>
+      <input type="checkbox" id="roman">
+      <label for="roman">Roman</label>
+      <input type="checkbox" id="sf">
+      <label for="sf">Science-fiction</label>
+      <input type="checkbox" id="policier">
+      <label for="policier">Policier</label>
+      <input type="checkbox" id="enfance">
+      <label for="enfance">Petite enfance</label>
+      <input type="checkbox" id="autres">
+      <label for="autres">Autres</label>
+      <br>
+
+      <label for="infos">Autres informations :</label>
+      <br>
+      <textarea id="infos" rows="4" cols="40"></textarea>
+      <br>
+
+      <button type="submit">S'inscrire</button>
+
+    </form>
+  </section>
 </body>
 </html>
