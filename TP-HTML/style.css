@@ -1,0 +1,50 @@
+body {
+  font-family: system-ui, "Segoe UI", sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+
+header,
+footer {
+  background-color: #2B3A67;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+main h1 {
+  color: #2B3A67;
+}
+
+h2 {
+  color: #3b5bdb;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #64748b;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #e0e7ff;
+}
+
+
+.livre {
+  border: 1px solid #cbd5e1;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
