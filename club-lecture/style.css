@@ -165,3 +165,57 @@ nav ul {
 .formulaire {
   width: 50%;
 }
+
+
+/* ===== EXERCICE 4 ===== */
+
+/* 1. Le badge "Nouveau" sur l'image */
+.photo {
+  position: relative;      /* le parent */
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;      /* l'enfant, placé par rapport au parent */
+  top: 10px;
+  right: 10px;
+  background: #22c55e;
+  color: #1e293b;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+/* 2. Survol et focus */
+nav a:hover,
+nav a:focus {
+  color: #22c55e;
+  border-bottom: 2px solid #22c55e;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #22c55e;
+  outline: none;
+}
+
+button:hover {
+  background: #22c55e;
+}
+
+/* 3. La petite barre verte des h2 */
+h2 {
+  position: relative;
+  padding-left: 0.8rem;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 4px;
+  height: 1em;
+  background: #22c55e;
+  border-radius: 2px;
+}
