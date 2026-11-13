@@ -1,0 +1,52 @@
+/* Règle obligatoire d'initialisation (Box Model) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 1. Style global du body */
+body {
+    font-family: system-ui, "Segoe UI", sans-serif;
+    color: #1e293b;
+    margin: 0;
+    padding: 0 1rem;
+    background-color: #f8fafc;
+}
+
+/* 2. Style de header et footer */
+header, footer {
+    background-color: #2B3A67;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+/* 3. Style des titres */
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+h2 {
+    color: #2B3A67;
+}
+
+h3 {
+    font-weight: normal;
+    color: #64748b;
+}
+
+/* 4. Style des liens de navigation */
+nav a {
+    text-decoration: none;
+    color: #e2e8f0;
+}
+
+/* 5. Style des sections de livres */
+.livre {
+    border: 1px solid #cbd5e1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-bottom: 1rem;
+}
