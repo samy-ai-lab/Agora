@@ -19,79 +19,84 @@
   </header>
 
   <main>
-  <h1>Voici nos partenaires</h1>
+    <h1>Voici nos partenaires</h1>
 
-  <!-- EXERCICE 3 : le tableau -->
-  <section>
-    <table>
-      <caption>Nos partenaires</caption>
-      <tr>
-        <th>Partenaire</th>
-        <th>Adresse</th>
-      </tr>
-      <tr>
-        <td>Librairie du Coin</td>
-        <td>12 rue de Paris</td>
-      </tr>
-      <tr>
-        <td>Café Lecture</td>
-        <td>5 rue Victor Hugo</td>
-      </tr>
-      <tr>
-        <td>Bibliothèque Centrale</td>
-        <td>8 place de la Mairie</td>
-      </tr>
-    </table>
-  </section>
+    <div class="colonnes">
 
-  <!-- EXERCICE 4 : le formulaire -->
-  <section>
-    <h2>Devenez partenaire du club de lecture</h2>
+      <!-- Le tableau -->
+      <section class="tableau">
+        <h2>Liste des partenaires</h2>
+        <table>
+          <caption>Nos partenaires</caption>
+          <tr>
+            <th>Partenaire</th>
+            <th>Adresse</th>
+          </tr>
+          <tr>
+            <td>Librairie du Coin</td>
+            <td>12 rue de Paris</td>
+          </tr>
+          <tr>
+            <td>Café Lecture</td>
+            <td>5 rue Victor Hugo</td>
+          </tr>
+          <tr>
+            <td>Bibliothèque Centrale</td>
+            <td>8 place de la Mairie</td>
+          </tr>
+        </table>
+      </section>
 
-    <form action="#" method="post">
+      <!-- Le formulaire -->
+      <section class="formulaire">
+        <h2>Devenez partenaire du club de lecture</h2>
 
-      <label for="nom">Nom :</label>
-      <input type="text" id="nom" required>
+        <form action="#" method="post">
 
-      <label for="email">Email :</label>
-      <input type="email" id="email" placeholder="exemple@mail.com" required>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" required>
 
-      <label for="mdp">Mot de passe :</label>
-      <input type="password" id="mdp">
+          <label for="email">Email :</label>
+          <input type="email" id="email" placeholder="exemple@mail.com" required>
 
-      <label for="date">Date de début :</label>
-      <input type="date" id="date">
+          <label for="mdp">Mot de passe :</label>
+          <input type="password" id="mdp">
 
-      <label for="livres">Livres par semaine :</label>
-      <input type="number" id="livres">
+          <label for="date">Date de début :</label>
+          <input type="date" id="date">
 
-      <fieldset>
-        <legend>Déjà partenaire par le passé ?</legend>
-        <input type="radio" id="oui" name="ancien">
-        <label for="oui">Oui</label>
-        <input type="radio" id="non" name="ancien">
-        <label for="non">Non</label>
-      </fieldset>
+          <label for="livres">Livres par semaine :</label>
+          <input type="number" id="livres">
 
-      <p>Catégories de livres :</p>
-      <input type="checkbox" id="roman">
-      <label for="roman">Roman</label>
-      <input type="checkbox" id="sf">
-      <label for="sf">Science-fiction</label>
-      <input type="checkbox" id="policier">
-      <label for="policier">Policier</label>
-      <input type="checkbox" id="enfance">
-      <label for="enfance">Petite enfance</label>
-      <input type="checkbox" id="autres">
-      <label for="autres">Autres</label>
+          <fieldset>
+            <legend>Déjà partenaire par le passé ?</legend>
+            <input type="radio" id="oui" name="ancien">
+            <label for="oui">Oui</label>
+            <input type="radio" id="non" name="ancien">
+            <label for="non">Non</label>
+          </fieldset>
 
-      <label for="infos">Autres informations :</label>
-      <textarea id="infos" rows="4" cols="40"></textarea>
+          <p>Catégories de livres :</p>
+          <input type="checkbox" id="roman">
+          <label for="roman">Roman</label>
+          <input type="checkbox" id="sf">
+          <label for="sf">Science-fiction</label>
+          <input type="checkbox" id="policier">
+          <label for="policier">Policier</label>
+          <input type="checkbox" id="enfance">
+          <label for="enfance">Petite enfance</label>
+          <input type="checkbox" id="autres">
+          <label for="autres">Autres</label>
 
-      <button type="submit">S'inscrire</button>
+          <label for="infos">Autres informations :</label>
+          <textarea id="infos" rows="4" cols="40"></textarea>
 
-    </form>
-  </section>
+          <button type="submit">S'inscrire</button>
+
+        </form>
+      </section>
+
+    </div>
   </main>
 
   <footer>
