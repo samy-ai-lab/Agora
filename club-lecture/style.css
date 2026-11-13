@@ -6,3 +6,55 @@
 *::after {
   box-sizing: border-box;
 }
+
+/* ===== EXERCICE 1 ===== */
+
+/* 1. Le body */
+body {
+  font-family: system-ui, sans-serif;
+  color: #1e293b;
+  background: #f8fafc;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+/* 2. Header et footer */
+header,
+footer {
+  background: #2B3A67;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+
+/* 3. Les titres */
+h1 {
+  font-size: 2rem;
+}
+
+header h1 {
+  color: white;
+}
+
+h2 {
+  color: #2B3A67;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #475569;
+}
+
+/* 4. Les liens du menu */
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 5. Les cartes "livre" */
+.livre {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
