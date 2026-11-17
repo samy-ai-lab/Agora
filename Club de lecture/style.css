@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: system-ui, sans-serif;
   color: #1e293b;
@@ -35,4 +41,137 @@ nav a {
   border: 1px solid gray;
   padding: 1rem;
   border-radius: 8px;
+}
+
+/* Exercice 2 */
+
+main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+table,
+th,
+td {
+  border: 1px solid gray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+}
+
+th {
+  background: #2B3A67;
+  color: white;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+button {
+  background: #2B3A67;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Exercice 3 */
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.livres {
+  display: flex;
+  gap: 1rem;
+}
+
+.livre {
+  flex: 1;
+}
+
+.colonnes {
+  display: flex;
+  gap: 2rem;
+}
+
+.tableau {
+  width: 40%;
+}
+
+.formulaire {
+  width: 50%;
+}
+
+/* Exercice 4 */
+
+.image {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4ade80;
+  color: #1e293b;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #4ade80;
+  border-bottom: 2px solid #4ade80;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #4ade80;
+}
+
+button:hover {
+  background: #4ade80;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1em;
+  background: #4ade80;
+  margin-right: 0.5rem;
 }
