@@ -8,36 +8,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #1e293b;
   margin: 0;
-  padding: 0 1rem;     
+  padding: 0 1rem;
   background-color: #f8fafc;
 }
 
 header,
 footer {
-  background-color: #2B3A67;   
-  color: #f4f1f1;             
-  padding: 1rem 1.5rem;        
+  background-color: #2B3A67;
+  color: #f4f1f1; 
+  padding: 1rem 1.5rem;
 
 }
 
 h1 {
-  font-size: 2.5rem;          
-  color: #fafafd;             
+  font-size: 2.5rem;
+  color: #fafafd;
 }
 
 h2 {
-  color: #606ebb;             
+  color: #606ebb;
 }
 
 h3 {
-  font-size: 1rem;      
+  font-size: 1rem;
   font-weight: normal;
   color: #598dd5;
 }
 
 nav a {
-  text-decoration: none;       
-  color: #8cadd8;       
+  text-decoration: none;
+  color: #8cadd8;
 
 }
 
@@ -46,6 +46,131 @@ nav a {
   border: 1px solid #bf85dc;
   border-radius: 8px;
   padding: 1rem;
-  margin-bottom: 1rem;         
+  margin-bottom: 1rem;
   background-color: #ffffff;
+}
+
+
+main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #bf85dc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.livres {
+  display: flex;
+  gap: 1rem;
+}
+
+.livres .livre {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+
+.partenaires-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.partenaires-layout table {
+  width: 60%;
+}
+
+.partenaires-layout form {
+  width: 50%;
+}
+
+:root {
+  --color-dark: #2b3a67;
+  --color-dark-hover: #3b4f8f;
+  --color-accent: #4ade80;
+  --color-border: #cbd5e1;
+}
+
+.image-container {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+}
+
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+  font-weight: 700;
+  padding: 0.4rem 1.2rem;
+  border-radius: 999px;
+}
+
+
+nav a {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.2rem;
+}
+nav a:hover,
+nav a:focus {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--color-accent);
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+button:hover {
+  background-color: var(--color-dark-hover);
+}
+
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+h2::after {
+  content: "";
+  order: -1;
+  width: 5px;
+  height: 1.5rem;
+  background-color: var(--color-accent);
+  border-radius: 3px;
 }
