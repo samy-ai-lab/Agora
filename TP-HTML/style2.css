@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1e293b;
+  margin: 0;
+  padding: 0 1rem;
+  background-color: #f8fafc;
+}
+
+header,
+footer {
+  background-color: #2B3A67;
+  color: #f4f1f1; 
+  padding: 1rem 1.5rem;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fafafd;
+}
+
+h2 {
+  color: #606ebb;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #598dd5;
+}
+
+nav a {
+  text-decoration: none;
+  color: #8cadd8;
+
+}
+
+
+.livre {
+  border: 1px solid #bf85dc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+}
+
+
+main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #bf85dc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
