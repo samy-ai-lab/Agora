@@ -188,3 +188,50 @@ footer p {
     transform: none;
   }
 }
+
+
+.galerie-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.galerie-images img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.pagination a {
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #7c3aed;
+  border-radius: 6px;
+  color: #4c1d95;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  background: #f3effd;
+}
+
+
+.pagination a[aria-current="page"] {
+  background: #4c1d95;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pagination a:focus-visible {
+  outline: 3px solid #1a5fb4;
+  outline-offset: 3px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaLys - Accueil</title>
+  <link rel="stylesheet" href="Grid.css">
+</head>
+<body>
+  <div class="page">
+
+    <header class="navbar">
+      <a href="index1.html" class="logo">
+        <img src="logo.jpg" alt="NovaLys, retour à l'accueil" width="120" height="40">
+      </a>
+      <nav class="liens" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">À propos</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="menu-lateral" aria-label="Menu latéral">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Équipe</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Nos articles</h1>
+
+      <section class="galerie">
+        <article class="une">
+          <h3>À la une</h3>
+          <p>L'article principal de la page</p>
+        </article>
+        <article>
+          <h3>Article 2</h3>
+          <p>Un court texte de présentation pour cette carte.</p>
+        </article>
+        <article>
+          <h3>Article 3</h3>
+          <p>Un court texte de présentation pour cette carte.</p>
+        </article>
+        <article>
+          <h3>Article 4</h3>
+          <p>Un court texte de présentation pour cette carte.</p>
+        </article>
+        <article>
+          <h3>Article 5</h3>
+          <p>Un court texte de présentation pour cette carte.</p>
+        </article>
+        <article>
+          <h3>Article 6</h3>
+          <p>Un court texte de présentation pour cette carte.</p>
+        </article>
+      </section>
+
+      <h2>Galerie</h2>
+
+      <div id="galerie-photos">
+        <section class="galerie-images" id="page-1" data-page="1">
+          <img src="photo1.jpg" alt="Vue du port au lever du soleil" width="400" height="300">
+          <img src="photo2.jpg" alt="Chat endormi sur un canapé gris" width="400" height="300">
+          <img src="photo3.jpg" alt="Sentier de montagne bordé de sapins" width="400" height="300">
+          <img src="photo4.jpg" alt="Tasse de café posée sur un bureau en bois" width="400" height="300">
+        </section>
+
+        <section class="galerie-images" id="page-2" data-page="2">
+          <img src="photo5.jpg" alt="Pont de pierre enjambant une rivière" width="400" height="300">
+          <img src="photo6.jpg" alt="Étal de fruits et légumes sur un marché" width="400" height="300">
+          <img src="photo7.jpg" alt="Skyline d'une ville au coucher du soleil" width="400" height="300">
+          <img src="photo8.jpg" alt="" width="400" height="300">
+        </section>
+      </div>
+
+      <nav class="pagination" aria-label="Pagination">
+        <a href="#page-1" data-page="1" aria-current="page">1</a>
+        <a href="#page-2" data-page="2">2</a>
+      </nav>
+
+      <div class="carte">
+        <h3>Découvrez NovaLys</h3>
+        <p>Une courte présentation de nos services.</p>
+        <button type="button" class="bouton">En savoir plus</button>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 NovaLys. Tous droits réservés.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('.galerie-images');
+    const liens = document.querySelectorAll('.pagination a');
+
+    function afficher(numero) {
+      pages.forEach(function (page) {
+        page.hidden = page.dataset.page !== numero;
+      });
+      liens.forEach(function (lien) {
+        if (lien.dataset.page === numero) {
+          lien.setAttribute('aria-current', 'page');
+        } else {
+          lien.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    liens.forEach(function (lien) {
+      lien.addEventListener('click', function (event) {
+        event.preventDefault();
+        afficher(lien.dataset.page);
+      });
+    });
+
+    afficher('1');
+  </script>
+</body>
+</html>
