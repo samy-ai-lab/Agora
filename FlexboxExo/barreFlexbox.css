@@ -1,0 +1,62 @@
+/* Règle d'initialisation du Box Model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    background-color: #f8fafc;
+}
+
+/* 1. Conteneur principal (Header) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Espace entre le logo et le premier lien (Accueil) */
+    background-color: #2B3A67;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 2. On étire le menu sur tout l'espace restant à droite du logo */
+.menu {
+    flex: 1;
+}
+
+/* 3. Liste des 4 liens alignés horizontalement */
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a:focus-visible {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* 4. DÉFI : Pousse uniquement "Contact" tout au bout à droite */
+.lien-contact {
+    margin-left: auto;
+}
