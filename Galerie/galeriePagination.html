@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5 - Galerie accessible et paginée</title>
+    <link rel="stylesheet" href="galeriePagination.css">
+</head>
+<body>
+
+    <main class="conteneur">
+        <h1>Galerie de photos</h1>
+
+        <!-- 1. Galerie de 8 vignettes en CSS Grid -->
+        <section class="galerie" aria-label="Galerie d'images">
+            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600" alt="Rayonnages d'une bibliothèque remplis de livres">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600" alt="Livres ouverts posés sur une table">
+            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=600" alt="Pile de romans colorés">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=600" alt="Étudiant lisant dans un espace calme">
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600" alt="Allée d'une grande bibliothèque">
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600" alt="Carnet de notes et tasse de café sur un bureau">
+            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600" alt="Livre ancien avec pages jaunies">
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=600" alt="">
+        </section>
+
+        <!-- 2. Pagination sur 2 pages avec aria-current -->
+        <nav class="pagination" aria-label="Pagination">
+            <a href="?page=1" aria-current="page" class="page-active">1</a>
+            <a href="?page=2">2</a>
+            <a href="?page=2">Page suivante</a>
+        </nav>
+    </main>
+
+</body>
+</html>
