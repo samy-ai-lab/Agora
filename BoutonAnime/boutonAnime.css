@@ -1,0 +1,73 @@
+/* Règle d'initialisation du Box Model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.conteneur {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* 1. Animation d'apparition de la carte avec @keyframes */
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carte {
+    max-width: 420px;
+    background-color: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    animation: apparition 0.4s ease-out forwards;
+}
+
+.carte h2 {
+    margin-top: 0;
+    color: #2B3A67;
+}
+
+/* 2. Bouton avec dégradé, ombre et transition de 0.2s */
+.bouton {
+    background: linear-gradient(120deg, #2B3A67, #4A97B1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(43, 58, 103, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+/* 3. États :hover (souris) et :focus-visible (clavier) */
+.bouton:hover,
+.bouton:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(43, 58, 103, 0.35);
+    filter: brightness(1.08);
+}
+
+.bouton:focus-visible {
+    outline: 3px solid #1a5fb4;
+    outline-offset: 3px;
+}
