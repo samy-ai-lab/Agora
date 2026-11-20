@@ -83,7 +83,7 @@ footer        { grid-area: pied; }
   text-decoration: underline;
 }
 
-/* ===== Contenu : galerie de cartes ===== */
+
 main {
   padding: 1rem 1rem 1rem 0;
 }
@@ -106,7 +106,7 @@ main {
   color: #4c1d95;
 }
 
-/* ===== Pied de page ===== */
+
 footer {
   padding: 1rem 2rem;
   background: #4c1d95;
@@ -130,5 +130,61 @@ footer p {
 
   main {
     padding: 1rem;
+  }
+}
+
+
+@keyframes apparition {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.carte {
+  max-width: 320px;
+  padding: 1.5rem;
+  border: 1px solid #d9d0f2;
+  border-radius: 8px;
+  background: white;
+  animation: apparition 0.4s ease-out forwards;
+}
+
+
+.bouton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(120deg, #5b21b6, #ed3ab7);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.bouton:hover,
+.bouton:focus-visible {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.bouton:focus-visible {
+  outline: 3px solid #1a5fb4;
+  outline-offset: 3px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .carte {
+    animation: none;
+  }
+  .bouton {
+    transition: none;
+  }
+  .bouton:hover,
+  .bouton:focus-visible {
+    transform: none;
   }
 }
