@@ -1,0 +1,119 @@
+
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "entete entete"
+    "menu   contenu"
+    "pied   pied";
+  gap: 1rem;
+  min-height: 100vh;
+}
+
+header        { grid-area: entete; }
+.menu-lateral { grid-area: menu; }
+main          { grid-area: contenu; }
+footer        { grid-area: pied; }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: #8b5cf6;
+}
+
+.logo img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+.liens {
+  flex: 1;
+}
+
+.liens ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.liens a {
+  color: white;
+  text-decoration: none;
+}
+
+.liens a:hover,
+.liens a:focus-visible {
+  text-decoration: underline;
+}
+
+.contact {
+  margin-left: auto;
+}
+
+
+.menu-lateral {
+  padding: 1rem;
+  background: #f3effd;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.menu-lateral a {
+  color: #4c1d95;
+  text-decoration: none;
+}
+
+.menu-lateral a:hover,
+.menu-lateral a:focus-visible {
+  text-decoration: underline;
+}
+
+/* ===== Contenu : galerie de cartes ===== */
+main {
+  padding: 1rem 1rem 1rem 0;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.galerie article {
+  padding: 1rem;
+  border: 1px solid #d9d0f2;
+  border-radius: 8px;
+  background: white;
+}
+
+.galerie h3 {
+  margin-top: 0;
+  color: #4c1d95;
+}
+
+/* ===== Pied de page ===== */
+footer {
+  padding: 1rem 2rem;
+  background: #4c1d95;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
