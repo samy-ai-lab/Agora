@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercice 5</title>
+  <style>
+    /* Exercice 5 */
+    .galerie {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galerie img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <img src="img/deco.png" alt="">
+
+  <div class="galerie">
+    <img src="img/emma.png" alt="Couverture du livre Emma">
+    <img src="img/candide.png" alt="Couverture du livre Candide">
+    <img src="img/germinal.png" alt="Couverture du livre Germinal">
+    <img src="img/les-miserables.png" alt="Couverture du livre Les Misérables">
+  </div>
+
+  <nav aria-label="Pagination">
+    <a href="exercice5.html">1</a>
+    <a href="exercice5-page2.html" aria-current="page">2</a>
+  </nav>
+</body>
+</html>
