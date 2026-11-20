@@ -1,0 +1,67 @@
+.demo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 2rem 0 .5rem;
+}
+
+.barre {
+  display: flex;
+  justify-content: space-between;   
+  align-items: center;              
+  background: #1e3a8a;              
+  color: #fff;
+  padding: 1rem 1.5rem;             
+  border-radius: .5rem;
+}
+
+/* le logo */
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;          /* image et texte côte à côte */
+  align-items: center;    /* centrés en hauteur */
+  gap: .5rem;             /* espace entre l'image et le texte */
+}
+
+
+.barre ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;       /* enlève les puces */
+  margin: 0;
+  padding: 0;
+}
+
+/* liens blancs, sans soulignement */
+.barre a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Version B : le défi */
+.nav-b {
+  flex-grow: 1;           /* le menu prend toute la place libre de la barre */
+  margin-left: 2rem;      /* un peu d'espace après le logo */
+}
+
+.contact {
+  margin-left: auto;      /* la marge automatique pousse Contact tout à droite */
+}
+
+
+@media (max-width: 768px) {
+  .barre ul {
+    flex-direction: column;   /* les uns sous les autres */
+    gap: .5rem;               /* moins d'espace entre eux */
+  }
+
+  /* version B : on annule le défi, sinon Contact reste décalé à droite */
+  .contact {
+    margin-left: 0;
+  }
+}
+

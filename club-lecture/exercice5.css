@@ -1,0 +1,16 @@
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.galerie img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+nav a[aria-current="page"] {
+  font-weight: bold;
+  color: #d43283;
+}

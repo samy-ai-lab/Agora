@@ -1,0 +1,99 @@
+.demo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 2rem 0 .5rem;
+}
+
+/* une grille avec des zones nommées */
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "entete entete"
+    "menu   contenu"
+    "pied   pied";
+  gap: 1rem;
+}
+
+/* chaque élément va dans sa zone */
+header { grid-area: entete; }
+nav    { grid-area: menu; }
+main   { grid-area: contenu; }
+footer { grid-area: pied; }
+
+/* couleurs des zones */
+header,
+footer {
+  background: #d43283;
+  color: #fff;
+  padding: 1rem;
+}
+nav {
+  background: #e0e7ff;
+  padding: 1rem;
+}
+
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+
+article {
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  padding: 1rem;
+}
+
+/* Défi ( version 2) */
+.une {
+  grid-column: span 2;    
+  background: #fce7f3;
+}
+
+
+
+
+
+
+
+.bouton {
+  background: linear-gradient(120deg, #d43283, #1e3a8a);
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem 1.5rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;                                  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .25);  
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.bouton:hover,
+.bouton:focus-visible {
+  transform: translateY(-2px);      
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .3); 
+}
+
+.bouton:focus-visible {
+  outline: 3px solid #b45309;
+  outline-offset: 3px;
+}
+
+@keyframes rebond {
+  0%   { transform: scale(1); }     
+  50%  { transform: scale(1.1); }    
+  100% { transform: scale(1); }     
+}
+
+.une {
+  animation: rebond 1s ease-in-out 2;
+}
+

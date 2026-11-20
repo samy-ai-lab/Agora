@@ -1,0 +1,52 @@
+.demo {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 2rem 0 .5rem;
+}
+
+/* une grille avec des zones nommées */
+.page {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "entete entete"
+    "menu   contenu"
+    "pied   pied";
+  gap: 1rem;
+}
+
+/* élément va dans sa zone */
+header { grid-area: entete; }
+nav    { grid-area: menu; }
+main   { grid-area: contenu; }
+footer { grid-area: pied; }
+
+/* couleurs des zones */
+header,
+footer {
+  background: #d43283;
+  color: #fff;
+  padding: 1rem;
+}
+nav {
+  background: #e0e7ff;
+  padding: 1rem;
+}
+
+/* 220px minimum chacune */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* les encadrés */
+article {
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  padding: 1rem;
+}

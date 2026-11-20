@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exercice 1 barre de navigation Flexbox </title>
+<link rel="stylesheet" href="exercice1.css">
+
+</head>
+<body>
+<div class="demo">
+  <h1>exercice 1 Barre de navigation</h1>
+
+  <h2>Version A </h2>
+  <header class="barre">
+    <a class="logo" href="#"><img src="livre.jpeg" alt="Logo" width="40">MonSite</a>
+    
+       <nav aria-label="Navigation principale version A">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Version B contact poussé à droite</h2>
+  <header class="barre">
+     <a class="logo" href="#"><img src="livre.jpeg" alt="Logo" width="40">MonSite</a>
+    <nav class="nav-b" aria-label="Navigation principale version B">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Cours</a></li>
+        <li><a href="#">Projets</a></li>
+        <li class="contact"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+</body>
+</html>
