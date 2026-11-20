@@ -117,3 +117,18 @@ footer {
 footer p {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "entete"
+      "menu"
+      "contenu"
+      "pied";
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

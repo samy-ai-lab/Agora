@@ -27,3 +27,20 @@
 .contact {
   margin-left: auto;
 }
+
+
+@media (max-width: 768px) {
+  .barre {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .liens ul {
+    flex-direction: column;
+  }
+
+  .contact {
+    margin-left: 0;
+  }
+}
+
