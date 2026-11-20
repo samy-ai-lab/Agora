@@ -92,3 +92,20 @@ body {
 .carte-a-la-une {
     grid-column: span 2;
 }
+
+/* Exercice #3 : Une seule colonne sous 768px */
+@media (max-width: 768px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "entete"
+            "menu"
+            "contenu"
+            "pied";
+    }
+
+    /* En 1 colonne, la carte "À la une" ne doit pas forcer 2 colonnes */
+    .carte-a-la-une {
+        grid-column: span 1;
+    }
+}
