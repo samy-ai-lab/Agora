@@ -36,11 +36,13 @@ body {
 }
 
 .menu a {
+    flex-direction: column;
   color: white;
 }
 
 
 .menu-defi {
+    flex-direction: column;
   flex-grow: 1;                     
 }
 

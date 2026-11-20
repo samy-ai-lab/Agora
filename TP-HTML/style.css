@@ -36,6 +36,7 @@ h3 {
 
 
 nav a {
+  flex-direction: column;
   text-decoration: none;
   color: #e0e7ff;
 }

@@ -1,0 +1,34 @@
+/* Style de la page */
+body {
+  font-family: system-ui, "Segoe UI", sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  padding: 2rem;
+}
+
+/* Le bouton au repos */
+.bouton {
+  background: linear-gradient(120deg, #2B3A67, #4A97B1);  /* dégradé bleu foncé -> bleu clair */
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .12);               /* ombre légère sous le bouton */
+  color: white;                                            /* texte blanc, bien lisible sur le dégradé foncé */
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.8rem 2rem;                                    /* espace intérieur */
+  border: none;                                            /* enlève la bordure par défaut */
+  border-radius: 8px;                                      /* coins arrondis */
+  cursor: pointer;                                         /* curseur en forme de main */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;   /* rend le changement fluide (déclaré sur l'élément qui change) */
+}
+
+/* Au survol de la souris ET quand on arrive dessus au clavier (Tab) */
+.bouton:hover,
+.bouton:focus {
+  transform: translateY(-3px) scale(1.03);                 /* remonte de 3px et grossit légèrement */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .2);                /* ombre plus marquée : effet "soulevé" */
+}
+
+/* Contour bien visible quand le bouton est sélectionné au clavier */
+.bouton:focus {
+  outline: 3px solid #f59e0b;                              /* contour orange */
+  outline-offset: 3px;                                     /* contour légèrement décollé du bouton */
+}
