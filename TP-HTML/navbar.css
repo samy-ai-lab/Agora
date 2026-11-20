@@ -1,0 +1,44 @@
+body {
+  font-family: system-ui, "Segoe UI", sans-serif;
+  color: #1e293b;
+  padding: 2rem;
+}
+
+.navbar {
+  display: flex;                    
+  justify-content: space-between;   
+  align-items: center;             
+  background-color: #4f46e5;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+
+.menu {
+  display: flex;                   
+  gap: 2rem;                        
+  list-style: none;                 
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu-defi {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.contact {
+  margin-left: auto;
+}
