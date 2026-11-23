@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - À toi de jouer #3</title>
+</head>
+<body>
+    <h1>Titre initial</h1>
+
+    <ul id="ma-liste">
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+    </ul>
+
+    <p>Premier paragraphe.</p>
+    <p>Deuxième paragraphe.</p>
+
+    <script>
+        const titre = document.querySelector("h1");
+        titre.textContent = "Nouveau titre modifié en JS !";
+
+        const liste = document.querySelector("#ma-liste");
+        const nouvelElement = document.createElement("li");
+        nouvelElement.textContent = "Élément 3 (ajouté en JS)";
+        liste.appendChild(nouvelElement);
+
+        const paragraphes = document.querySelectorAll("p");
+        paragraphes.forEach((p) => {
+            p.style.color = "red";
+        });
+    </script>
+</body>
+</html>

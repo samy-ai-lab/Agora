@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - À toi de jouer #4</title>
+</head>
+<body>
+    <h1>Ma liste de tâches</h1>
+
+    <input type="text" id="champ-tache" placeholder="Nouvelle tâche...">
+    <button type="button" id="btn-ajouter">Ajouter une tâche</button>
+    <button type="button" id="btn-effacer">Effacer les tâches</button>
+
+    <ul id="liste-taches"></ul>
+
+    <script>
+        const champ = document.querySelector("#champ-tache");
+        const boutonAjouter = document.querySelector("#btn-ajouter");
+        const boutonEffacer = document.querySelector("#btn-effacer");
+        const liste = document.querySelector("#liste-taches");
+
+        boutonAjouter.addEventListener("click", () => {
+            const texte = champ.value.trim();
+
+            if (texte !== "") {
+                const nouvelElement = document.createElement("li");
+                nouvelElement.textContent = texte;
+                liste.appendChild(nouvelElement);
+
+                champ.value = "";
+            }
+        });
+
+        boutonEffacer.addEventListener("click", () => {
+            liste.innerHTML = "";
+        });
+    </script>
+</body>
+</html>

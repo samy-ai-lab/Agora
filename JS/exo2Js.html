@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - À toi de jouer #2</title>
+</head>
+<body>
+    <h1>Exercice 2 JS : Fonctions</h1>
+
+    <script>
+        function carre(n) {
+            return n * n;
+        }
+        function bonjour(nom) {
+            return `Bonjour ${nom} !`;
+        }
+        console.log("Carré de 4 :", carre(4));
+        console.log("Message :", bonjour("Etienne"));
+
+        // Bonus
+        const carreFlechee = (n) => n * n;
+        const bonjourFlechee = (nom) => `Bonjour ${nom} !`;
+
+        console.log("Carré fléché de 5 :", carreFlechee(5));
+        console.log("Message fléché :", bonjourFlechee("Alice"));
+    </script>
+</body>
+</html>
