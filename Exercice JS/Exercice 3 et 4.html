@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Titre</h1>
+  <input type="text" id="champ">
+  <button id="bouton">Ajouter une tache</button>
+  <ul></ul>
+  <p>Paragraphe 1</p>
+  <p>Paragraphe 2</p>
+
+  <script>
+    // Exercice 3
+    var titre = document.querySelector("h1");
+    titre.textContent = "Nouveau titre";
+
+    var li = document.createElement("li");
+    li.textContent = "Element";
+    var ul = document.querySelector("ul");
+    ul.appendChild(li);
+
+    var paragraphes = document.querySelectorAll("p");
+    for (var i = 0; i < paragraphes.length; i++) {
+      paragraphes[i].style.color = "red";
+    }
+
+    // Exercice 4
+    var champ = document.getElementById("champ");
+    var bouton = document.getElementById("bouton");
+
+    bouton.addEventListener("click", function() {
+      var nouveauLi = document.createElement("li");
+      nouveauLi.textContent = champ.value;
+      ul.appendChild(nouveauLi);
+      champ.value = "";
+    });
+  </script>
+</body>
+</html>
