@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exo 4 </title>
+</head>
+<body onload='
+  document.getElementById("bouton").addEventListener("click", ajouterTache);
+
+  function ajouterTache() {
+    let champ = document.getElementById("champ");
+    let texte = champ.value;
+    let li = document.createElement("li");
+    li.textContent = texte;
+    document.getElementById("liste").appendChild(li);
+    champ.value = "";
+  }
+'>
+  <h1>liste des tâches</h1>
+
+  <textarea id="champ" rows="1"></textarea>
+  <button id="bouton">ajouter une tâche</button>
+
+  <ul id="liste">
+    <li>Faire l exo 3</li>
+  </ul>
+</body>
+</html>
