@@ -1,5 +1,3 @@
--- Fausses données pour tester
-
 INSERT INTO utilisateur (nom, email, telephone) VALUES
   ('Chris', 'chris@test.fr', '0601020304'),
   ('Samy', 'samy@test.fr', NULL);
