@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Exo 3 – Le DOM</title>
+</head>
+<body onload="
+  document.querySelector('h1').textContent = 'Titre changé par JavaScript';
+
+  let li = document.createElement('li');
+  li.textContent = 'Kiwi (ajouté par JavaScript)';
+  document.querySelector('ul').appendChild(li);
+
+  document.querySelectorAll('p').forEach((p) => { p.style.color = 'red'; });
+">
+  <h1>Titre de départ</h1>
+
+  <ul>
+    <li>Pomme</li>
+    <li>Banane</li>
+  </ul>
+
+  <p>Premier paragraphe.</p>
+  <p>Deuxième paragraphe.</p>
+</body>
+</html>
+
