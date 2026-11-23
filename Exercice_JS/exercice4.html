@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>C'est un test</h1>
+
+   <ul id="liste">
+    <li>Élément 1</li>
+    <li>Élément 2</li>
+  </ul>
+
+  <p>Paragraphe_1</p>
+  <p>Paragraphe_2</p>
+  <p>Paragraphe_3</p>
+
+
+  <input type="text" id="champ" placeholder="Nouvelle tâche">
+  <button onclick="ajouterTache()">Ajouter une tâche</button>
+
+  <script>
+
+    const titre = document.querySelector("h1");
+    titre.textContent = "Le test est fait!";
+
+    const nouveauLi = document.createElement("li");
+    nouveauLi.textContent = "Élément 3";
+    document.querySelector("#liste").appendChild(nouveauLi);
+
+    const paragraphes = document.querySelectorAll("p");
+    paragraphes.forEach((p) => {
+      p.style.color = "red";
+    });
+
+    function ajouterTache() {
+      const champ = document.querySelector("#champ");
+      const texte = champ.value.trim();
+
+      if (texte === "") {
+        return;
+      }
+
+      const li = document.createElement("li");
+      li.textContent = texte;
+      document.querySelector("#liste").appendChild(li);
+
+      champ.value = "";
+      champ.focus();
+    }
+  </script>
+</body>
+</html>
