@@ -1,13 +1,10 @@
-/* ===== EXERCICES CSS - PARTIE 1 : EXERCICE 4 ===== */
-
-/* 1. Le badge "Nouveau" sur l'image */
 .photo {
-  position: relative;      /* le parent */
+  position: relative;
   display: inline-block;
 }
 
 .badge {
-  position: absolute;      /* l'enfant, placé par rapport au parent */
+  position: absolute;
   top: 10px;
   right: 10px;
   background: #22c55e;
@@ -17,7 +14,6 @@
   border-radius: 20px;
 }
 
-/* 2. Survol et focus */
 nav a:hover,
 nav a:focus {
   color: #22c55e;
@@ -34,7 +30,6 @@ button:hover {
   background: #22c55e;
 }
 
-/* 3. La petite barre verte des h2 */
 h2 {
   position: relative;
   padding-left: 0.8rem;
