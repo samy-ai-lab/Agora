@@ -1,5 +1,3 @@
--- V001 : on crée les deux tables de départ
-
 CREATE TABLE utilisateur (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nom VARCHAR(100) NOT NULL,
