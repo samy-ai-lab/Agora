@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Ma liste de tâches</h1>
+
+  <input type="text" id="champ">
+  <button id="bouton">Ajouter une tâche</button>
+  <button id="reset">Vider la liste</button>
+
+  <ul id="liste"></ul>
+
+<script>
+  document.getElementById("bouton").addEventListener("click", function () {
+    const champ = document.getElementById("champ");
+
+    const li = document.createElement("li");
+    li.textContent = champ.value;
+    document.getElementById("liste").appendChild(li);
+
+    champ.value = "";
+  });
+
+  document.getElementById("reset").addEventListener("click", function () {
+    document.getElementById("liste").innerHTML = "";
+  });
+</script>
+</body>
+</html>
