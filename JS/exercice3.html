@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Titre</h1>
+
+  <ul>
+    <li>Élément 1</li>
+  </ul>
+
+  <p>Paragraphe 1</p>
+  <p>Paragraphe 2</p>
+
+<script>
+  const titre = document.querySelector("h1");
+  titre.textContent = "Nouveau titre";
+
+  const li = document.createElement("li");
+  li.textContent = "Élément 2";
+  document.querySelector("ul").appendChild(li);
+
+  const paragraphes = document.querySelectorAll("p");
+  paragraphes.forEach((p) => {
+    p.style.color = "red";
+  });
+</script>
+</body>
+</html>
