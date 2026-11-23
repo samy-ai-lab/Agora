@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À toi de jouer #4 : événements</title>
+</head>
+<body>
+  <h1>À toi de jouer #4 : événements</h1>
+
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <label for="tache">Nouvelle tâche :</label>
+  <input type="text" id="tache">
+  <button id="ajouter">Ajouter une tâche</button>
+
+  <script>
+    const liste = document.querySelector("ul");
+    const champ = document.getElementById("tache");
+    const bouton = document.getElementById("ajouter");
+
+    bouton.addEventListener("click", function () {
+      const nouveauLi = document.createElement("li");
+      nouveauLi.textContent = champ.value;
+      liste.appendChild(nouveauLi);
+      champ.value = "";
+    });
+  </script>
+</body>
+</html>
