@@ -35,18 +35,16 @@
         formulaire.addEventListener("submit", (event) => {
             const nom = champNom.value.trim();
 
-            // Réinitialise les messages avant de vérifier
             messageErreur.textContent = "";
             messageOk.textContent = "";
 
             if (nom.length < 3) {
-                event.preventDefault(); // Bloque l'envoi du formulaire
+                event.preventDefault(); 
                 messageErreur.textContent = "Erreur : le nom doit contenir au moins 3 caractères.";
                 champNom.focus();
                 return;
             }
 
-            // Ici, si tu n'as pas de serveur/action, on bloque aussi le rechargement pour tester l'affichage
             event.preventDefault();
             messageOk.textContent = `Formulaire valide pour ${nom} (${champEmail.value}) !`;
         });
