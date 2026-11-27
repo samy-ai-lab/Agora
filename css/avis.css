@@ -1,0 +1,30 @@
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--espace-7) var(--espace-4);
+}
+
+.avis {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espace-5);
+}
+
+.avis-entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.moyenne {
+  display: flex;
+  align-items: center;
+  gap: var(--espace-2);
+}
+
+.moyenne-note {
+  font-family: var(--police-principale);
+  font-size: var(--taille-texte-4);
+  font-weight: 800;
+  font-stretch: 78%;
+}
